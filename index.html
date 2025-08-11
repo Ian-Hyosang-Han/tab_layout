@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab_Layout</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery & JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <h1 class="title">Three types of responsive layouts</h1>
+        <!-- start of tab -->
+        <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">semantic tag</li>
+            <li class="tab-link" data-tab="tab-2">flex</li>
+            <li class="tab-link" data-tab="tab-3">grid</li>
+        </ul>
+        <!-- end of tab -->
+        <!-- start of tab-1 (semantic tag) -->
+        <div id="tab-1" class="tab-content current">
+            <div class="tab-1-wrap">
+                <header>
+                    <p class="text-center">header</p>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav1</a></li>
+                        <li><a href="#">nav2</a></li>
+                        <li><a href="#">nav3</a></li>
+                        <li><a href="#">nav4</a></li>
+                    </ul>
+                </nav>
+                <div class="sec_flex">
+                    <aside>
+                        <p class="text-center">aside</p>
+                    </aside>
+                    <section>
+                        <article>
+                            <p class="text-center">section cont1</p>
+                        </article>
+                        <article>
+                            <p class="text-center">section cont2</p>
+                        </article>
+                    </section>
+                </div>
+                <footer>
+                    <p class="text-center">footer</p>
+                </footer>
+            </div>
+        </div>
+        <!-- end of tab-1 (semantic tag) -->
+        <!-- start of tab-2 (flex) -->
+        <div id="tab-2" class="tab-content">
+            <div class="tab-2-wrap">
+                <ul class="flex_1">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="flex_2">
+                    <li></li>
+                    <li>
+                        <p class="text-center">FLEXBOX</p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of tab-2 (flex) -->
+        <!-- start of tab-3 (grid) -->
+        <div id="tab-3" class="tab-content">
+            <div class="tab-3-wrap">
+                <div class="item header">header</div>
+                <div class="item sidebar">sidebar</div>
+                <div class="item content-1">Content-1</div>
+                <div class="item content-2">Content-2</div>
+                <div class="item content-3">Content-3</div>
+                <div class="item footer">footer</div>
+            </div>
+        </div>
+        <!-- end of tab-3 (grid) -->
+    </div>
+    <!-- //container -->
+</body>
+
+</html>
